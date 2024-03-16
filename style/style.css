@@ -136,6 +136,169 @@ main {
     font-weight: 400;
 }
 
+/* end feature */
+
+/* tearm section */
+
+.tearm {
+    display: flex;
+    gap: 145px;
+    margin-top: 130px;
+}
+
+.tearm-header h1 {
+    max-width: 468px;
+    color: var(--Dark-01, #131313);
+    font-family: "Work Sans";
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.tearm-header p {
+    max-width: 586px;
+    color: var(--Dark-03, #727272);
+    font-family: "Work Sans";
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.tearm-1 {
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.tearm-1 h3 {
+    padding-top: 30px;
+    margin-bottom: 5px;
+    color: var(--Dark-01, #131313);
+    font-family: "Work Sans";
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.tearm-1 p {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    max-width: 514px;
+    color: var(--Dark-03, #727272);
+    font-family: "Work Sans";
+    font-size: 1rem;
+    font-weight: 400;
+}
+.ten-years-bedge{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years-bedge h2{
+    font-size: 4rem;
+    margin: 0;
+}
+.ten-years-bedge 
+
+/* facts section */
+.section-title {
+    color: var(--Dark-01, #131313);
+    font-family: "Work Sans";
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.facts-details {
+    max-width: 542px;
+    color: var(--Dark-03, #727272);
+    font-family: "Work Sans";
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+}
+
+.card {
+    padding: 0 35px;
+    margin-top: 100px;
+}
+
+.card img {
+    margin-top: 45px;
+}
+
+.card-stats {
+    color: var(--Dark-02, #424242);
+    font-family: "Work Sans";
+    font-size: 2.7rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.card-title {
+    color: var(--Dark-03, #727272);
+    font-family: "Work Sans";
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 60px;
+}
+
+/* end fact section */
+
+/* sponsors section */
+.sponsors {
+    margin-top: 180px;
+}
+
+.sponsors h3 {
+    text-align: center;
+    color: var(--Dark-01, #131313);
+    font-family: "Work Sans";
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+.sponsors p {
+    margin-top: 24px;
+    max-width: 542px;
+    color: var(--Dark-03, #727272);
+    margin: 24px auto;
+    font-family: "Work Sans";
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.sponsors-img {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+
+.sponsors-img img {
+    width: 165px;
+}
+
 /* responsive media queries */
 
 /* mobile devices */
@@ -145,17 +308,24 @@ main {
     }
 
     .header-top,
-    .features
-    {
+    .sponsors-img,
+    .features {
         flex-direction: column;
     }
-    .features-img{
+
+    .features-img {
         grid-template-columns: 1fr;
     }
-    .features{
+
+    .features {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .facts-card-container {
+        flex-direction: column;
+    }
+
 }
 
 /* tablet or medium devices */
@@ -165,7 +335,15 @@ main {
         padding: 30px;
     }
 
-    .header-top, .features {
+    .header-top,
+    .sponsors-img,
+    .features {
         flex-direction: column;
+    }
+
+    .facts-card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
     }
 }
